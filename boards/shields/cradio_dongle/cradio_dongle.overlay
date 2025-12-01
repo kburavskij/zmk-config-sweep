@@ -1,12 +1,16 @@
-{
-    macros {
-        main_macro: main_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(M) &kp U &kp S &kp T &kp A &kp N &kp G &kp A &kp T &kp C &kp O &kp V &kp E &kp N &kp T &kp R &kp Y &kp DOT &kp N1 &kp N9 &kp N6 &kp N5>;
-            label = "MAIN_MACRO";
-        };
+#include <dt-bindings/zmk/matrix_transform.h>
+
+
+macros {
+    main_macro: main_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LS(M) &kp U &kp S &kp T &kp A &kp N &kp G &kp A &kp T &kp C &kp O &kp V &kp E &kp N &kp T &kp R &kp Y &kp DOT &kp N1 &kp N9 &kp N6 &kp N5>;
+        label = "MAIN_MACRO";
     };
+};
+
+/ {
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
